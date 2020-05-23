@@ -1,0 +1,13 @@
+<div class="board-container">
+    <div class="row">
+        <div class="col text-center">
+            <button type="button" (click)="clearData()"style="margin-right: 5px;" class="btn btn-primary"> Clear Data </button> 
+            <button type="button" (click)="dummyData()"class="btn btn-success"> Dummy Data </button>
+        </div>
+    </div>
+    <div class="row">
+        <ng-container *ngFor="let section of sections">
+            <agb-board-section [sectionData]="section" class="col-sm-6 mb-5 {{section.class}}"></agb-board-section>
+        </ng-container>
+    </div>
+</div>

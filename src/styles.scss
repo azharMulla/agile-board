@@ -1,1 +1,33 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: cursive;
+  }
+.cs-well{
+    agb-card{
+        .card-container{
+            background-color: #da9ba3;
+        }        
+    }
+}
+.cs-improved{
+    agb-card{
+        .card-container{
+            background-color: #d1e8e2;
+        }
+    }
+}
+.cs-start-doing{
+    agb-card{
+        .card-container{
+            background-color: #afd275;
+        }
+    }
+}
+.cs-action-items{
+    agb-card{
+        .card-container{
+            background-color: #afd2f5;
+        }
+    }
+}

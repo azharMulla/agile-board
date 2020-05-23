@@ -1,0 +1,38 @@
+:host{
+    .card-container{
+        padding: 10px;
+        border-radius: 3px 3px 15px 3px;
+        -webkit-box-shadow: 2px 1px 3px 2px rgba(170,170,170,1);
+        -moz-box-shadow: 2px 1px 3px 2px rgba(170,170,170,1);
+        box-shadow: 2px 1px 3px 2px rgba(170,170,170,1);
+        min-height: 118px;
+        textarea {
+            background: transparent;
+            text-align: center;
+            resize: none;
+            border: 0 none;
+            width: 90%;
+            outline: none;
+            height: 95px;
+            position: absolute;
+            top: 5px;
+            overflow: -moz-scrollbars-none;
+            -ms-overflow-style: none; 
+          }
+        textarea::-webkit-scrollbar {
+            display: none;
+        }
+        .votes, .edit{
+            position: absolute;
+            color: #888;
+            cursor: pointer;
+            bottom: 5px;
+        }
+        .votes{
+            left: 10px;
+        }
+        .edit{
+            right: 10px;
+        }
+    }    
+}

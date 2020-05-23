@@ -1,0 +1,7 @@
+<div class="card-container">
+    
+    <textarea #txtContent [(ngModel)]="cardData.content" [readonly]="!cardData.isEditable" 
+                        (keydown.enter)="saveContent()" (blur)="saveContent()"></textarea>
+    <span title="Edit card" class="edit"><i class="fas fa-pencil-alt"></i></span>
+    <span class="votes">+ {{cardData.votes||0}}</span>
+</div>

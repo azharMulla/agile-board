@@ -1,0 +1,8 @@
+<div class="section-container">
+    <div class="title">{{sectionData.title}} <button (click)="addNewCard()"class="btn btn-success btn-sm"><i class="fas fa-plus-circle"></i></button></div>
+    <div class="row">
+        <ng-container *ngFor="let card of sectionData.cards">
+            <agb-card class="col-sm-6 col-md-4 p-1" [cardData]="card"></agb-card>
+        </ng-container>
+    </div>
+</div>
