@@ -4,8 +4,9 @@ import { BoardComponent } from './components/board/board.component';
 
 
 const routes: Routes = [
-  {path:"board", component:BoardComponent},
-  { path: '',   redirectTo: '/board', pathMatch: 'full' }
+  { path:"board", component: BoardComponent },
+  { path: '',   redirectTo: '/board', pathMatch: 'full' },
+  { path: '**', component: BoardComponent },
 ];
 
 @NgModule({
